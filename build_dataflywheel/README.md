@@ -5,7 +5,7 @@
 
     **注意這部份是要收費的，但可以使用$300美元的抵免額並免費試用90天 (免費試用期結束後不會自動收費)!**
 - 安裝 [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) (後面會用到 gcloud CLI)
-- - [訓練好的模型](https://github.com/eatPizza311/iThome-2021ironman/blob/main/build_dataflywheel/model_training.ipynb)，我們的 App 會使用影像分類模型 (以 [Kaggle 300 Bird Species - Classification](https://www.kaggle.com/gpiosenka/100-bird-species) 種的幾種鳥類作為訓練集)。
+- [訓練好的模型](https://github.com/eatPizza311/iThome-2021ironman/blob/main/build_dataflywheel/model_training.ipynb)，我們的 App 會使用影像分類模型 (以 [Kaggle 300 Bird Species - Classification](https://www.kaggle.com/gpiosenka/100-bird-species) 種的幾種鳥類作為訓練集)。
    
   訓練資料已由 GCP 的值區移到此 Repo 並用 Git LFS 儲存，需要可以自行下載。
   
