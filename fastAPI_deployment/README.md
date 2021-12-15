@@ -1,6 +1,6 @@
 # 使用 fastAPI 部署 YOLOv4 物件偵測模型
 
-## 使用 Conda 建立 Python 虛擬環境
+## 方法1. 使用 Conda 建立 Python 虛擬環境
 
 ### 前置作業: 在電腦裡安裝 [conda](https://docs.conda.io/en/latest/)
 我們會使用 Conda 作為環境管理系統，所有需要的函式庫相依都會存放在獨立的環境中。
@@ -48,5 +48,32 @@ jupyter lab
 此時 Jupyter lab 應該會位於執行上一步指令的資料夾中，點開 `server.ipynb` 就可以開始我們的冒險啦!!
 
 如果想關閉 Jupyter lab 的話就連按兩次 Ctrl + C 即可。
+
+## 方法2. 使用Pipenv建立虛擬環境
+1. 把專案`git clone`下來。
+2. 建立pipenv虛擬環境，如未安裝pipenv請執行`pip3 install pipenv`。
+    ```
+    pipenv --three 
+    或指定版本如下
+    pipenv --python 3.8 
+    ```
+3. 安裝相依套件，執行以下指令安裝`requirements.txt`內套件，順利完成將產生`Pipfile.lock`，而`Pipfile`也記錄引入套件的資訊。
+    ```
+    pipenv install -r .\iThome-2021ironman\fastAPI_deployment\requirements.txt
+    ```
+4. 執行jupyter lab，如果您使用windows10系統，遇到ModuleNotFoundError: No module named 'pysqlite2'或sqlite3的問題，請參考此[issue](https://github.com/jupyter/notebook/issues/4332)，至 [sqlite官網](https://www.sqlite.org/download.html)下載壓縮檔，解壓縮將`sqlite3.dll`置於您的電腦`C:\Windows\System32\sqlite3.dll`中可解決。
+    ```
+    #啟動環境
+    pipenv shell
+    jupyter lab
+    ```
+    或在pipenv shell外執行
+    ```
+    pipenv run jupyter lab
+    ```
+
+
+
+
 
 ### 就這樣，祝大家部署模型愉快~~

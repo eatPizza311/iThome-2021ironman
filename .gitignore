@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+
+fastAPI_deployment/images_predicted/
+fastAPI_deployment/images_uploaded/
+fastAPI_deployment/images_with_boxes/
