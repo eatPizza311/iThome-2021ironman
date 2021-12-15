@@ -1,6 +1,6 @@
 # 使用 fastAPI 部署 YOLOv4 物件偵測模型
 
-## 使用 Conda 建立 Python 虛擬環境
+## 方法1. 使用 Conda 建立 Python 虛擬環境
 
 ### 前置作業: 在電腦裡安裝 [conda](https://docs.conda.io/en/latest/)
 我們會使用 Conda 作為環境管理系統，所有需要的函式庫相依都會存放在獨立的環境中。
@@ -49,7 +49,7 @@ jupyter lab
 
 如果想關閉 Jupyter lab 的話就連按兩次 Ctrl + C 即可。
 
-## 方法2 使用Pipenv建立虛擬環境
+## 方法2. 使用Pipenv建立虛擬環境
 1. 把專案`git clone`下來。
 2. 建立pipenv虛擬環境，如未安裝pipenv請執行`pip3 install pipenv`。
     ```
@@ -66,7 +66,9 @@ jupyter lab
     #啟動環境
     pipenv shell
     jupyter lab
-    #或在pipenv shell外執行
+    ```
+    或在pipenv shell外執行
+    ```
     pipenv run jupyter lab
     ```
 
